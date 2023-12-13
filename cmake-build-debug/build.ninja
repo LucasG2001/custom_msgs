@@ -144,9 +144,15 @@ build _custom_msgs_generate_messages_check_deps_action_primitive_message: phony 
 
 
 #############################################
+# Utility command for _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg
+
+build _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg: phony CMakeFiles/_custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg
+
+
+#############################################
 # Utility command for custom_msgs_generate_messages_cpp
 
-build custom_msgs_generate_messages_cpp: phony CMakeFiles/custom_msgs_generate_messages_cpp devel/include/custom_msgs/action_primitive_message.h _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
+build custom_msgs_generate_messages_cpp: phony CMakeFiles/custom_msgs_generate_messages_cpp devel/include/custom_msgs/ImpedanceParameterMsg.h devel/include/custom_msgs/action_primitive_message.h _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
 
 
 #############################################
@@ -158,7 +164,7 @@ build custom_msgs_gencpp: phony custom_msgs_generate_messages_cpp
 #############################################
 # Utility command for custom_msgs_generate_messages_eus
 
-build custom_msgs_generate_messages_eus: phony CMakeFiles/custom_msgs_generate_messages_eus devel/share/roseus/ros/custom_msgs/manifest.l devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
+build custom_msgs_generate_messages_eus: phony CMakeFiles/custom_msgs_generate_messages_eus devel/share/roseus/ros/custom_msgs/manifest.l devel/share/roseus/ros/custom_msgs/msg/ImpedanceParameterMsg.l devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
 
 
 #############################################
@@ -170,7 +176,7 @@ build custom_msgs_geneus: phony custom_msgs_generate_messages_eus
 #############################################
 # Utility command for custom_msgs_generate_messages_lisp
 
-build custom_msgs_generate_messages_lisp: phony CMakeFiles/custom_msgs_generate_messages_lisp devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
+build custom_msgs_generate_messages_lisp: phony CMakeFiles/custom_msgs_generate_messages_lisp devel/share/common-lisp/ros/custom_msgs/msg/ImpedanceParameterMsg.lisp devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
 
 
 #############################################
@@ -182,7 +188,7 @@ build custom_msgs_genlisp: phony custom_msgs_generate_messages_lisp
 #############################################
 # Utility command for custom_msgs_generate_messages_nodejs
 
-build custom_msgs_generate_messages_nodejs: phony CMakeFiles/custom_msgs_generate_messages_nodejs devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
+build custom_msgs_generate_messages_nodejs: phony CMakeFiles/custom_msgs_generate_messages_nodejs devel/share/gennodejs/ros/custom_msgs/msg/ImpedanceParameterMsg.js devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
 
 
 #############################################
@@ -194,7 +200,7 @@ build custom_msgs_gennodejs: phony custom_msgs_generate_messages_nodejs
 #############################################
 # Utility command for custom_msgs_generate_messages_py
 
-build custom_msgs_generate_messages_py: phony CMakeFiles/custom_msgs_generate_messages_py devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+build custom_msgs_generate_messages_py: phony CMakeFiles/custom_msgs_generate_messages_py devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
 
 
 #############################################
@@ -291,19 +297,35 @@ build CMakeFiles/clean_test_results | ${cmake_ninja_workdir}CMakeFiles/clean_tes
 # Custom command for CMakeFiles/_custom_msgs_generate_messages_check_deps_action_primitive_message
 
 build CMakeFiles/_custom_msgs_generate_messages_check_deps_action_primitive_message | ${cmake_ninja_workdir}CMakeFiles/_custom_msgs_generate_messages_check_deps_action_primitive_message: CUSTOM_COMMAND
-  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py custom_msgs /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py custom_msgs /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose
+
+
+#############################################
+# Custom command for CMakeFiles/_custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg
+
+build CMakeFiles/_custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg | ${cmake_ninja_workdir}CMakeFiles/_custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg: CUSTOM_COMMAND
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py custom_msgs /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg
 
 
 #############################################
 # Phony custom command for CMakeFiles/custom_msgs_generate_messages_cpp
 
-build CMakeFiles/custom_msgs_generate_messages_cpp | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_cpp: phony devel/include/custom_msgs/action_primitive_message.h || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
+build CMakeFiles/custom_msgs_generate_messages_cpp | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_cpp: phony devel/include/custom_msgs/action_primitive_message.h devel/include/custom_msgs/ImpedanceParameterMsg.h || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
+
+
+#############################################
+# Custom command for devel/include/custom_msgs/ImpedanceParameterMsg.h
+
+build devel/include/custom_msgs/ImpedanceParameterMsg.h | ${cmake_ninja_workdir}devel/include/custom_msgs/ImpedanceParameterMsg.h: CUSTOM_COMMAND /opt/ros/noetic/lib/gencpp/gen_cpp.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg /opt/ros/noetic/share/gencpp/msg.h.template || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/include/custom_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+  DESC = Generating C++ code from custom_msgs/ImpedanceParameterMsg.msg
+  restat = 1
 
 
 #############################################
 # Custom command for devel/include/custom_msgs/action_primitive_message.h
 
-build devel/include/custom_msgs/action_primitive_message.h | ${cmake_ninja_workdir}devel/include/custom_msgs/action_primitive_message.h: CUSTOM_COMMAND /opt/ros/noetic/lib/gencpp/gen_cpp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/gencpp/msg.h.template || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
+build devel/include/custom_msgs/action_primitive_message.h | ${cmake_ninja_workdir}devel/include/custom_msgs/action_primitive_message.h: CUSTOM_COMMAND /opt/ros/noetic/lib/gencpp/gen_cpp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/gencpp/msg.h.template || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_cpp std_msgs_generate_messages_cpp
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/include/custom_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
   DESC = Generating C++ code from custom_msgs/action_primitive_message.msg
   restat = 1
@@ -312,22 +334,31 @@ build devel/include/custom_msgs/action_primitive_message.h | ${cmake_ninja_workd
 #############################################
 # Phony custom command for CMakeFiles/custom_msgs_generate_messages_eus
 
-build CMakeFiles/custom_msgs_generate_messages_eus | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_eus: phony devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l devel/share/roseus/ros/custom_msgs/manifest.l || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
+build CMakeFiles/custom_msgs_generate_messages_eus | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_eus: phony devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l devel/share/roseus/ros/custom_msgs/msg/ImpedanceParameterMsg.l devel/share/roseus/ros/custom_msgs/manifest.l || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
 
 
 #############################################
 # Custom command for devel/share/roseus/ros/custom_msgs/manifest.l
 
-build devel/share/roseus/ros/custom_msgs/manifest.l | ${cmake_ninja_workdir}devel/share/roseus/ros/custom_msgs/manifest.l: CUSTOM_COMMAND /opt/ros/noetic/lib/geneus/gen_eus.py || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
+build devel/share/roseus/ros/custom_msgs/manifest.l | ${cmake_ninja_workdir}devel/share/roseus/ros/custom_msgs/manifest.l: CUSTOM_COMMAND /opt/ros/noetic/lib/geneus/gen_eus.py || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/roseus/ros/custom_msgs custom_msgs geometry_msgs std_msgs
   DESC = Generating EusLisp manifest code for custom_msgs
   restat = 1
 
 
 #############################################
+# Custom command for devel/share/roseus/ros/custom_msgs/msg/ImpedanceParameterMsg.l
+
+build devel/share/roseus/ros/custom_msgs/msg/ImpedanceParameterMsg.l | ${cmake_ninja_workdir}devel/share/roseus/ros/custom_msgs/msg/ImpedanceParameterMsg.l: CUSTOM_COMMAND /opt/ros/noetic/lib/geneus/gen_eus.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/roseus/ros/custom_msgs/msg
+  DESC = Generating EusLisp code from custom_msgs/ImpedanceParameterMsg.msg
+  restat = 1
+
+
+#############################################
 # Custom command for devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l
 
-build devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l | ${cmake_ninja_workdir}devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l: CUSTOM_COMMAND /opt/ros/noetic/lib/geneus/gen_eus.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
+build devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l | ${cmake_ninja_workdir}devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l: CUSTOM_COMMAND /opt/ros/noetic/lib/geneus/gen_eus.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_eus std_msgs_generate_messages_eus
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/roseus/ros/custom_msgs/msg
   DESC = Generating EusLisp code from custom_msgs/action_primitive_message.msg
   restat = 1
@@ -336,13 +367,22 @@ build devel/share/roseus/ros/custom_msgs/msg/action_primitive_message.l | ${cmak
 #############################################
 # Phony custom command for CMakeFiles/custom_msgs_generate_messages_lisp
 
-build CMakeFiles/custom_msgs_generate_messages_lisp | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_lisp: phony devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
+build CMakeFiles/custom_msgs_generate_messages_lisp | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_lisp: phony devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp devel/share/common-lisp/ros/custom_msgs/msg/ImpedanceParameterMsg.lisp || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
+
+
+#############################################
+# Custom command for devel/share/common-lisp/ros/custom_msgs/msg/ImpedanceParameterMsg.lisp
+
+build devel/share/common-lisp/ros/custom_msgs/msg/ImpedanceParameterMsg.lisp | ${cmake_ninja_workdir}devel/share/common-lisp/ros/custom_msgs/msg/ImpedanceParameterMsg.lisp: CUSTOM_COMMAND /opt/ros/noetic/lib/genlisp/gen_lisp.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/common-lisp/ros/custom_msgs/msg
+  DESC = Generating Lisp code from custom_msgs/ImpedanceParameterMsg.msg
+  restat = 1
 
 
 #############################################
 # Custom command for devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp
 
-build devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp | ${cmake_ninja_workdir}devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp: CUSTOM_COMMAND /opt/ros/noetic/lib/genlisp/gen_lisp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
+build devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp | ${cmake_ninja_workdir}devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp: CUSTOM_COMMAND /opt/ros/noetic/lib/genlisp/gen_lisp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_lisp std_msgs_generate_messages_lisp
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/common-lisp/ros/custom_msgs/msg
   DESC = Generating Lisp code from custom_msgs/action_primitive_message.msg
   restat = 1
@@ -351,13 +391,22 @@ build devel/share/common-lisp/ros/custom_msgs/msg/action_primitive_message.lisp 
 #############################################
 # Phony custom command for CMakeFiles/custom_msgs_generate_messages_nodejs
 
-build CMakeFiles/custom_msgs_generate_messages_nodejs | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_nodejs: phony devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
+build CMakeFiles/custom_msgs_generate_messages_nodejs | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_nodejs: phony devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js devel/share/gennodejs/ros/custom_msgs/msg/ImpedanceParameterMsg.js || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
+
+
+#############################################
+# Custom command for devel/share/gennodejs/ros/custom_msgs/msg/ImpedanceParameterMsg.js
+
+build devel/share/gennodejs/ros/custom_msgs/msg/ImpedanceParameterMsg.js | ${cmake_ninja_workdir}devel/share/gennodejs/ros/custom_msgs/msg/ImpedanceParameterMsg.js: CUSTOM_COMMAND /opt/ros/noetic/lib/gennodejs/gen_nodejs.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/gennodejs/ros/custom_msgs/msg
+  DESC = Generating Javascript code from custom_msgs/ImpedanceParameterMsg.msg
+  restat = 1
 
 
 #############################################
 # Custom command for devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js
 
-build devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js | ${cmake_ninja_workdir}devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js: CUSTOM_COMMAND /opt/ros/noetic/lib/gennodejs/gen_nodejs.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
+build devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js | ${cmake_ninja_workdir}devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js: CUSTOM_COMMAND /opt/ros/noetic/lib/gennodejs/gen_nodejs.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_nodejs std_msgs_generate_messages_nodejs
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/share/gennodejs/ros/custom_msgs/msg
   DESC = Generating Javascript code from custom_msgs/action_primitive_message.msg
   restat = 1
@@ -366,13 +415,22 @@ build devel/share/gennodejs/ros/custom_msgs/msg/action_primitive_message.js | ${
 #############################################
 # Phony custom command for CMakeFiles/custom_msgs_generate_messages_py
 
-build CMakeFiles/custom_msgs_generate_messages_py | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_py: phony devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+build CMakeFiles/custom_msgs_generate_messages_py | ${cmake_ninja_workdir}CMakeFiles/custom_msgs_generate_messages_py: phony devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+
+
+#############################################
+# Custom command for devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py
+
+build devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py | ${cmake_ninja_workdir}devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py: CUSTOM_COMMAND /opt/ros/noetic/lib/genpy/genmsg_py.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+  COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/lib/python3/dist-packages/custom_msgs/msg
+  DESC = Generating Python from MSG custom_msgs/ImpedanceParameterMsg
+  restat = 1
 
 
 #############################################
 # Custom command for devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py
 
-build devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py | ${cmake_ninja_workdir}devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py: CUSTOM_COMMAND /opt/ros/noetic/lib/genpy/genmsg_py.py devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+build devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py | ${cmake_ninja_workdir}devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py: CUSTOM_COMMAND /opt/ros/noetic/lib/genpy/genmsg_py.py devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py devel/lib/python3/dist-packages/custom_msgs/msg/_ImpedanceParameterMsg.py || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/lib/python3/dist-packages/custom_msgs/msg --initpy
   DESC = Generating Python msg __init__.py for custom_msgs
   restat = 1
@@ -381,7 +439,7 @@ build devel/lib/python3/dist-packages/custom_msgs/msg/__init__.py | ${cmake_ninj
 #############################################
 # Custom command for devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py
 
-build devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py | ${cmake_ninja_workdir}devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py: CUSTOM_COMMAND /opt/ros/noetic/lib/genpy/genmsg_py.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg || _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
+build devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py | ${cmake_ninja_workdir}devel/lib/python3/dist-packages/custom_msgs/msg/_action_primitive_message.py: CUSTOM_COMMAND /opt/ros/noetic/lib/genpy/genmsg_py.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg /opt/ros/noetic/share/geometry_msgs/msg/Point.msg /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg || _custom_msgs_generate_messages_check_deps_ImpedanceParameterMsg _custom_msgs_generate_messages_check_deps_action_primitive_message geometry_msgs_generate_messages_py std_msgs_generate_messages_py
   COMMAND = cd /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug && /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg -Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/lucas/catkin_ws/src/custom_msgs/cmake-build-debug/devel/lib/python3/dist-packages/custom_msgs/msg
   DESC = Generating Python from MSG custom_msgs/action_primitive_message
   restat = 1

@@ -168,7 +168,7 @@
 			{
 				"command" : 7,
 				"file" : 4,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -196,7 +196,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 198,
+				"line" : 243,
 				"parent" : 28
 			},
 			{
@@ -208,7 +208,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 212,
+				"line" : 257,
 				"parent" : 28
 			},
 			{
@@ -220,7 +220,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 226,
+				"line" : 271,
 				"parent" : 28
 			},
 			{
@@ -232,7 +232,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 240,
+				"line" : 285,
 				"parent" : 28
 			},
 			{
@@ -244,7 +244,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 253,
+				"line" : 298,
 				"parent" : 28
 			},
 			{
@@ -256,7 +256,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 255,
+				"line" : 300,
 				"parent" : 28
 			},
 			{
@@ -268,7 +268,7 @@
 			{
 				"command" : 9,
 				"file" : 4,
-				"line" : 105,
+				"line" : 106,
 				"parent" : 0
 			},
 			{
@@ -403,7 +403,8 @@
 			"destination" : "share/custom_msgs/msg",
 			"paths" : 
 			[
-				"msg/action_primitive_message.msg"
+				"msg/action_primitive_message.msg",
+				"msg/ImpedanceParameterMsg.msg"
 			],
 			"type" : "file"
 		},
