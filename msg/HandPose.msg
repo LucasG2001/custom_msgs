@@ -1,4 +1,4 @@
-builtin_interfaces/Time timestamp
+time timestamp
 geometry_msgs/Vector3 position
 geometry_msgs/Quaternion orientation
 bool isTracked

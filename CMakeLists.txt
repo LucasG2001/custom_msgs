@@ -50,8 +50,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    action_primitive_message.msg
-        ImpedanceParameterMsg.msg
-	HandPose.msg
+   ImpedanceParameterMsg.msg
+   HandPose.msg
 	)
 
 ## Generate services in the 'srv' folder
@@ -72,8 +72,7 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   geometry_msgs
-  builtin_interfaces
-        std_msgs
+  std_msgs
 )
 
 ################################################
@@ -108,7 +107,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES custom_msgs
-   CATKIN_DEPENDS geometry_msgs message_generation std_msgs builtin_interfaces
+   CATKIN_DEPENDS geometry_msgs message_generation std_msgs
 #  DEPENDS system_lib
 )
 
