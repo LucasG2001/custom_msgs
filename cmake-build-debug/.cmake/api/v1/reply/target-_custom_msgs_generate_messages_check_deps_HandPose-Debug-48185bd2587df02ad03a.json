@@ -22,7 +22,7 @@
 			{
 				"command" : 2,
 				"file" : 2,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
@@ -38,13 +38,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 31,
 				"parent" : 3
 			}
 		]
 	},
-	"id" : "_custom_msgs_generate_messages_check_deps_action_primitive_message::@6890427a1f51a3e7e1df",
-	"name" : "_custom_msgs_generate_messages_check_deps_action_primitive_message",
+	"id" : "_custom_msgs_generate_messages_check_deps_HandPose::@6890427a1f51a3e7e1df",
+	"name" : "_custom_msgs_generate_messages_check_deps_HandPose",
 	"paths" : 
 	{
 		"build" : ".",
@@ -72,13 +72,13 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_action_primitive_message",
+			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_HandPose",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_action_primitive_message.rule",
+			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_HandPose.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
