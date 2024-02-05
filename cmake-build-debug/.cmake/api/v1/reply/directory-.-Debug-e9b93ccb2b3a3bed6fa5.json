@@ -168,7 +168,7 @@
 			{
 				"command" : 7,
 				"file" : 4,
-				"line" : 72,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -196,7 +196,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 288,
+				"line" : 243,
 				"parent" : 28
 			},
 			{
@@ -208,7 +208,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 302,
+				"line" : 257,
 				"parent" : 28
 			},
 			{
@@ -220,7 +220,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 316,
+				"line" : 271,
 				"parent" : 28
 			},
 			{
@@ -232,7 +232,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 330,
+				"line" : 285,
 				"parent" : 28
 			},
 			{
@@ -244,7 +244,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 343,
+				"line" : 298,
 				"parent" : 28
 			},
 			{
@@ -256,7 +256,7 @@
 			{
 				"command" : 1,
 				"file" : 7,
-				"line" : 345,
+				"line" : 300,
 				"parent" : 28
 			},
 			{
@@ -268,7 +268,7 @@
 			{
 				"command" : 9,
 				"file" : 4,
-				"line" : 107,
+				"line" : 106,
 				"parent" : 0
 			},
 			{
@@ -404,8 +404,7 @@
 			"paths" : 
 			[
 				"msg/action_primitive_message.msg",
-				"msg/ImpedanceParameterMsg.msg",
-				"msg/HandPose.msg"
+				"msg/ImpedanceParameterMsg.msg"
 			],
 			"type" : "file"
 		},
