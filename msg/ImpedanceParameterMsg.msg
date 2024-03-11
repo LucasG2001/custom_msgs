@@ -7,3 +7,5 @@ float64[36] damping
 # quadratic matrices representing positional stiffnesses only for the safety buble (i.e. 3x3)
 float64[36] safety_bubble_stiffness
 float64[36] safety_bubble_damping
+# add a free float bool for hold this
+bool isFreeFloat
