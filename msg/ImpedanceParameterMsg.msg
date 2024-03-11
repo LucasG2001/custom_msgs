@@ -8,4 +8,3 @@ float64[36] damping
 float64[36] safety_bubble_stiffness
 float64[36] safety_bubble_damping
 # add a free float bool for hold this
-bool isFreeFloat
