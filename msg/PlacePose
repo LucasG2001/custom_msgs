@@ -1,3 +1,0 @@
-geometry_msgs/Pose goalPose
-std_msgs/Bool isPlane
-

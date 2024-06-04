@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "custom_msgs: 3 messages, 0 services")
+message(STATUS "custom_msgs: 4 messages, 0 services")
 
 set(MSG_I_FLAGS "-Icustom_msgs:/home/lucas/catkin_ws/src/custom_msgs/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -32,6 +32,11 @@ add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msgs" "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" "geometry_msgs/Vector3:geometry_msgs/Quaternion"
 )
 
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
+add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msgs" "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" "std_msgs/Bool:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -56,6 +61,12 @@ _generate_msg_cpp(custom_msgs
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/custom_msgs
 )
+_generate_msg_cpp(custom_msgs
+  "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/custom_msgs
+)
 
 ### Generating Services
 
@@ -76,6 +87,8 @@ add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_message
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -105,6 +118,12 @@ _generate_msg_eus(custom_msgs
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/custom_msgs
 )
+_generate_msg_eus(custom_msgs
+  "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/custom_msgs
+)
 
 ### Generating Services
 
@@ -125,6 +144,8 @@ add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_message
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -154,6 +175,12 @@ _generate_msg_lisp(custom_msgs
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/custom_msgs
 )
+_generate_msg_lisp(custom_msgs
+  "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/custom_msgs
+)
 
 ### Generating Services
 
@@ -174,6 +201,8 @@ add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messag
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -203,6 +232,12 @@ _generate_msg_nodejs(custom_msgs
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/custom_msgs
 )
+_generate_msg_nodejs(custom_msgs
+  "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/custom_msgs
+)
 
 ### Generating Services
 
@@ -223,6 +258,8 @@ add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_mess
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -252,6 +289,12 @@ _generate_msg_py(custom_msgs
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/custom_msgs
 )
+_generate_msg_py(custom_msgs
+  "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Bool.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/custom_msgs
+)
 
 ### Generating Services
 
@@ -272,6 +315,8 @@ add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

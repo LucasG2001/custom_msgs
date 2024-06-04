@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg;/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg;/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg"
+messages_str = "/home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg;/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg;/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg;/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
 services_str = ""
 pkg_name = "custom_msgs"
 dependencies_str = "geometry_msgs;std_msgs"

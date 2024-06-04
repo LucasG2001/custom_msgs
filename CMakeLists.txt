@@ -52,6 +52,7 @@ add_message_files(
    action_primitive_message.msg
    ImpedanceParameterMsg.msg
    HandPose.msg
+		PlacePose.msg
 	)
 
 ## Generate services in the 'srv' folder

@@ -138,6 +138,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/lucas/catkin_ws/src/custom_msgs/msg/action_primitive_message.msg"
     "/home/lucas/catkin_ws/src/custom_msgs/msg/ImpedanceParameterMsg.msg"
     "/home/lucas/catkin_ws/src/custom_msgs/msg/HandPose.msg"
+    "/home/lucas/catkin_ws/src/custom_msgs/msg/PlacePoseMsg.msg"
     )
 endif()
 
