@@ -406,7 +406,7 @@
 				"msg/action_primitive_message.msg",
 				"msg/ImpedanceParameterMsg.msg",
 				"msg/HandPose.msg",
-				"msg/PlacePoseMsg.msg"
+				"msg/PlacePose.msg"
 			],
 			"type" : "file"
 		},

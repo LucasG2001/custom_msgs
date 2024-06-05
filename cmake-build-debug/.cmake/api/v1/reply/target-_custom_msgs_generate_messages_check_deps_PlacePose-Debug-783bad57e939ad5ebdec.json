@@ -43,8 +43,8 @@
 			}
 		]
 	},
-	"id" : "_custom_msgs_generate_messages_check_deps_PlacePoseMsg::@6890427a1f51a3e7e1df",
-	"name" : "_custom_msgs_generate_messages_check_deps_PlacePoseMsg",
+	"id" : "_custom_msgs_generate_messages_check_deps_PlacePose::@6890427a1f51a3e7e1df",
+	"name" : "_custom_msgs_generate_messages_check_deps_PlacePose",
 	"paths" : 
 	{
 		"build" : ".",
@@ -72,13 +72,13 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_PlacePoseMsg",
+			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_PlacePose",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_PlacePoseMsg.rule",
+			"path" : "cmake-build-debug/CMakeFiles/_custom_msgs_generate_messages_check_deps_PlacePose.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
